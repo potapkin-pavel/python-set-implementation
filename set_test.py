@@ -73,6 +73,7 @@ def test_symmetric_difference_between_empty_and_non_empty_sets():
     set3 = set1.symmetric_difference(set2)
     assert set3 == Set([1, 2, 3, 4])
 
+
 def test_symmetric_difference_between_both_empty_sets():
     set1 = Set([])
     set2 = Set([])

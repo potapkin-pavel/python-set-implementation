@@ -10,7 +10,7 @@
 # We assume that every method has a corresponding test or set of tests. Everything should be
 # written in python.
 
-class Set():
+class Set:
     """ Represents Set class """
 
     def __init__(self, iterable=[]):
@@ -21,7 +21,7 @@ class Set():
 
     def add(self, element):
         """ Method that adds an element """
-        if (element not in self.elements):
+        if element not in self.elements:
             self.elements.append(element)
         else:
             self.elements[self.get_index(element)] = element
@@ -38,10 +38,10 @@ class Set():
         """ Symmetric difference """
         result = Set()
         for element in self:
-            if (element not in set):
+            if element not in set:
                 result.add(element)
         for element in set:
-            if (element not in self):
+            if element not in self:
                 result.add(element)
         return result
 
@@ -61,7 +61,7 @@ class Set():
         string_representation = "["
         for element in self:
             string_representation += str(element)
-        if (self.get_index(element) != len(self.elements) - 1):
-            string_representation += ", "
+            if self.get_index(element) != len(self.elements) - 1:
+                string_representation += ", "
         string_representation += "]"
         return string_representation
