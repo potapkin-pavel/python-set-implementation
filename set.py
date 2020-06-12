@@ -32,7 +32,7 @@ class Set():
 
     def remove(self, index):
         """ Method that removes an element by index """
-        self.elements.remove(self.get_index(index))
+        del self.elements[index]
 
     def symmetric_difference(self, set):
         """ Symmetric difference """
